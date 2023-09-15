@@ -1945,7 +1945,7 @@ button,
     position: relative;
     width: 26em; }
     #sidebar > .inner > * {
-      border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+      /* border-bottom: solid 2px rgba(210, 215, 217, 0.75); */
       margin: 0 0 1.5em 0;
       padding: 0 0 1.5em 0; }
       #sidebar > .inner > * > :last-child {
@@ -2120,6 +2120,19 @@ button,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex; }
+  #banner a {
+    -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    border-bottom: dotted 1px;
+    color: #7f6af5;
+    text-decoration: none; }
+    #banner a:hover {
+      border-bottom-color: #6ab2f5;
+      color: #6ab2f5 !important; }
+      #banner a:hover strong {
+        color: inherit; }
   #banner h1 {
     font-size: xx-large;
     margin-top: -0.125em; }
